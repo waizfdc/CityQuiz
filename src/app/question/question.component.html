@@ -1,0 +1,19 @@
+<body>
+    <div class="imageContainer">
+        <!--<span class="helper"></span>-->
+        <img [src]="tempImageUrl" [class.hidden]="imgLoaded">
+        <img [src]="imageUrl" (load)="imageLoaded()" [class.hidden]="!imgLoaded"> 
+    </div>
+    <br>
+    <br>
+    <div class = "buttons">
+        <div class="buttons_group">
+            <button (click)="buttonClicked(0)" [disabled]="!buttonAbility" class="btn0 btn">{{button[0]}}</button>
+            <button (click)="buttonClicked(1)" [disabled]="!buttonAbility" class="btn1 btn">{{button[1]}}</button>
+        </div>
+        <div class="buttons_group">
+            <button (click)="buttonClicked(2)" [disabled]="!buttonAbility" class="btn2 btn">{{button[2]}}</button>
+            <button (click)="buttonClicked(3)" [disabled]="!buttonAbility" class="btn3 btn">{{button[3]}}</button>
+        </div>
+    </div>
+</body>

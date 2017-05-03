@@ -1,0 +1,9 @@
+div.page-wrap {
+    background-color: #e7ebf0;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+}
+.hidden {
+    display: none;
+}

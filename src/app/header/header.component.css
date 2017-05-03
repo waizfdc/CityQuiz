@@ -1,0 +1,73 @@
+div.page_header_cont {
+    position: fixed;
+    height: 42px;
+    width: 100%;
+    background-color: #5682a3;
+    left: 0;
+    top: 0;
+    z-index: 120;
+    direction: ltr;
+}
+div.header {
+    max-width: 960px;
+    min-width: 300px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.logo {
+    width: 50px;
+    height: 42px;
+    float: left;
+}
+div.user-info {
+    width: 50px;
+    height: 42px;
+    float: right;
+    text-align: right;
+    vertical-align: middle;
+    color: white;
+    margin-right: 10px;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+div.login-button {
+    width: 60px;
+    height: 42px;
+    float: right;
+    text-align: center;
+    vertical-align: middle;
+}
+div:hover .login-button {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2);
+}
+div.header-item {
+    display: inline-block;
+    color: white;
+}
+div.score {
+    margin-right: 0;
+}
+div.avatar {
+    width: 44px;
+}
+div.hidden {
+    display: none;
+    color: white;
+}
+img.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    vertical-align: middle;
+    text-align: center;
+}
+img.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+}

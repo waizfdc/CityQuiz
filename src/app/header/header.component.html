@@ -1,0 +1,23 @@
+<div class="page_header_cont">
+  <div class="header">
+    <div class="logo header-item"(click)="logoPressed()">
+      <img class="logo" [src]="logo">
+    </div>
+    <div class="login-button header-item" (click)="loginPressed()" [class.hidden]="this.authService.isAuth">
+      <span class="helper"></span>
+      <span class="log-button">Login</span>
+    </div>
+    <div class="login-button header-item" (click)="logoutPressed()" [class.hidden]="!this.authService.isAuth">
+      <span class="helper"></span>
+      <span class="log-button">Logout</span>
+    </div>
+    <div class="user-info header-item avatar" (click)="userClicked()" [class.hidden]="!this.authService.isAuth">
+      <span class="helper"></span>
+      <img [src]="this.authService.avatar" class="avatar">
+    </div>
+    <div class="user-info header-item score">
+      <span class="helper"></span>
+      <span class="score">{{this.authService.score}}</span>
+    </div>
+  </div>
+</div>
