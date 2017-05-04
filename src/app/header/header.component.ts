@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   logo = "../../assets/img/logo.png";
 
-  constructor(private authService: AuthService) { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit() {
   }
